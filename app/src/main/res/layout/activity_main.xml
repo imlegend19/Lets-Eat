@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSlogan"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/logo_letseat"
+        android:gravity="center"
+        android:text="@string/slogan"
+        android:textColor="@color/textColor"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnSgnUp"
+            android:text="@string/sign_up"
+            android:textColor="@color/textColor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+            <!--app:buttonColor="@color/btnSignUp"-->
+            <!--app:shadowColor="@android:color/black"-->
+            <!--app:shadowEnabled="true"-->
+            <!--app:shadowHeight="5dp"-->
+            <!--app:cornerRadius="4dp"/>-->
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/btnSgnIn"
+            android:text="@string/sign_in"
+            android:textColor="@color/textColor"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp" />
+            <!--app:buttonColor="@color/btnSignActive"-->
+            <!--app:shadowColor="@android:color/black"-->
+            <!--app:shadowEnabled="true"-->
+            <!--app:shadowHeight="5dp"-->
+            <!--app:cornerRadius="4dp"/>-->
+
+    </LinearLayout>
+
+</RelativeLayout>
